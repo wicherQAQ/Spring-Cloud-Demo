@@ -1,0 +1,17 @@
+server:
+  port: 8080 #项目端口
+
+spring:
+  application:
+    name: provider_service #对外暴露微服务名称
+
+eureka:
+  instance:
+    instance-id: provider-service #自定义服务名称信息
+    prefer-ip-address: true #访问路径可以显示ip地址
+    #微服务info的修改
+
+  client:
+    service-url:
+      #单机版 defaultZone: http://localhost:8001/eureka/ #eureka_server端注册的地址
+      defaultZone: http://eureka8001.com:8001/eureka/,http://eureka8002.com:8002/eureka/,http://eureka8003.com:8003/eureka/

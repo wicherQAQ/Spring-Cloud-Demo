@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.wuwc</groupId>
+        <artifactId>ferrari</artifactId>
+        <version>0.0.1</version>
+    </parent>
+    <groupId>com.wuwc</groupId>
+    <artifactId>consumer</artifactId>
+    <version>0.0.1</version>
+    <name>consumer</name>
+    <description>接口消费者（调用者）</description>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.wuwc</groupId>
+            <artifactId>common</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+    </dependencies>
+
+
+</project>

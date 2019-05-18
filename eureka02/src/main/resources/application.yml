@@ -1,0 +1,19 @@
+server:
+  port: 8003 #指定服务端口
+
+spring:
+  application:
+    name: eureka-server #指定应用的名称
+
+eureka:
+  instance:
+    hostname: eureka8003.com #指定主机名称
+  #server一定程度上也是client，互为client，
+  client:
+    #由于自己就是服务器，不需要注册到自己
+    register-with-eureka: false
+    #由于自己就是服务器，不需要从服务器获取注册信息
+    fetch-registry: false
+    #服务地址
+    service-url:
+      defaultZone: http://eureka8001.com:8001/eureka/,http://eureka8002.com:8002/eureka/
